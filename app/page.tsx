@@ -1,5 +1,6 @@
 // import './globals.css'
 import Head from "next/head";
+import Link from 'next/link';
 import Image from "next/image";
 import homePageLanding from "./homePageLanding.jpg"
 import { Inter } from "next/font/google";
@@ -25,12 +26,12 @@ export default function Home() {
 					MUMATE
 				</div>
 				<div className="flex justify-between gap-5">
-					<button className="bg-blue px-6 py-2 rounded-3xl">
+					<Link href='/login' className="bg-blue px-6 py-2 rounded-3xl">
 						sign in
-					</button>
-					<button className="px-5 py-2 border-2 border-blue rounded-3xl">
+					</Link>
+					<Link href='#' className="px-5 py-2 border-2 border-blue rounded-3xl">
 						sign up
-					</button>
+					</Link>
 				</div>
 			</div>
 
